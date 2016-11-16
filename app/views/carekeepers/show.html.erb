@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @carekeeper.name %>
+</p>
+
+<p>
+  <strong>Lastname:</strong>
+  <%= @carekeeper.lastname %>
+</p>
+
+<%= link_to 'Edit', edit_carekeeper_path(@carekeeper) %> |
+<%= link_to 'Back', carekeepers_path %>

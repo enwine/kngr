@@ -1,0 +1,27 @@
+<%= form_for(carekeeper) do |f| %>
+  <% if carekeeper.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(carekeeper.errors.count, "error") %> prohibited this carekeeper from being saved:</h2>
+
+      <ul>
+      <% carekeeper.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :lastname %>
+    <%= f.text_field :lastname %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

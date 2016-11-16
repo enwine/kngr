@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Carekeepers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Lastname</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @carekeepers.each do |carekeeper| %>
+      <tr>
+        <td><%= carekeeper.name %></td>
+        <td><%= carekeeper.lastname %></td>
+        <td><%= link_to 'Show', carekeeper %></td>
+        <td><%= link_to 'Edit', edit_carekeeper_path(carekeeper) %></td>
+        <td><%= link_to 'Destroy', carekeeper, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Carekeeper', new_carekeeper_path %>

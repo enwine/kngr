@@ -1,0 +1,1 @@
+json.array! @carekeepers, partial: 'carekeepers/carekeeper', as: :carekeeper
