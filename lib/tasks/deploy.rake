@@ -13,11 +13,11 @@ namespace :deploy do
     chdir APP_ROOT do
       puts '== Fetching new version =='
       system! 'git pull'
-      puts '\n== Upgrading db version =='
+      puts "\n== Upgrading db version =="
       system! 'RAILS_ENV=production rails db:migrate'
-      puts '\n== Restarting processes =='
+      puts "\n== Restarting processes =="
       system! 'service unicorn_kngr restart'
-      puts '\n== Deployment completed =='
+      puts "'\n== Deployment completed =="
     end
   end
 end
