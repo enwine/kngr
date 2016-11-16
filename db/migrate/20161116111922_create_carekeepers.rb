@@ -3,16 +3,16 @@ class CreateCarekeepers < ActiveRecord::Migration[5.0]
     create_table :carekeepers do |t|
       t.string :name
       t.string :lastname
-      t.string :email, index: true
+      t.string :email
       t.string :phone
       t.boolean :whatsapp
-      t.date :dob
-      t.integer :gender
+      t.date :date_of_birth
       t.boolean :foreign
       t.string :nif
-      t.text :why_us
+      t.integer :gender
       t.text :why_you
-      
+      t.text :why_us
+
       t.timestamps
     end
   end

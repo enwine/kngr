@@ -1,1 +1,0 @@
-json.partial! "carekeepers/carekeeper", carekeeper: @carekeeper

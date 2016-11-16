@@ -3,7 +3,25 @@
 one:
   name: MyString
   lastname: MyString
+  email: MyString
+  phone: MyString
+  whatsapp: false
+  date_of_birth: 2016-11-16
+  foreign: false
+  nif: MyString
+  gender: 1
+  why_you: MyText
+  why_us: MyText
 
 two:
   name: MyString
   lastname: MyString
+  email: MyString
+  phone: MyString
+  whatsapp: false
+  date_of_birth: 2016-11-16
+  foreign: false
+  nif: MyString
+  gender: 1
+  why_you: MyText
+  why_us: MyText
